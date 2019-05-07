@@ -47,22 +47,27 @@ class BlogBody extends Component {
 
   render(){
     let posts = this.state.posts
-    console.log(posts)
     return (
       <Container>
         <Row className="align-items-center blogCard">
         {posts.map(post => {
+          /* Convert ISO to regular date string */
+          let publishDate = post.publishDate.toString().split("T")[0]
+
           return (
             <Col lg={4} sm={12} className="align-self-center" key={post.id}>
               <Card>
                 <Card.Body>
                   <Card.Title>{decodeWPUnicode(post.title)}</Card.Title>
                     <Card.Text>
-                      {decodeWPUnicode(post.excerpt)}
+                      {decodeWPUnicode(post.excerpt, 'excerpt')}
                     </Card.Text>
                 </Card.Body>
+                <Card.Body>
+                  <Card.Link href={post.link}>Read More</Card.Link>
+                </Card.Body>
                 <Card.Footer>
-                  <small className="text-muted">Date Created {post.publishDate}</small>
+                  <small className="text-muted">Date Published: {publishDate}</small>
                 </Card.Footer>
               </Card>
             </Col>

@@ -3,6 +3,11 @@ body, html{
   height: 100%;
 }
 
+.navbarPadding{
+  margin-top: 60px;
+}
+
+/* Home Page */
 #aboutUs{
   background-color: rgb(0, 69, 125);
   text-align: center;
@@ -13,7 +18,7 @@ body, html{
 
   /* Position and center the image to scale on all screens */
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)),
-  url('https://storage.googleapis.com/sharpspring-editor/stock/bg/bg-1.jpg');
+  url('https://firebasestorage.googleapis.com/v0/b/rcd-static.appspot.com/o/images%2Fimg-1557239960870-bg-1.jpg?alt=media&token=a1746a53-0dc0-43ae-80cc-a5f33321f568');
 
   background-position: center center;
   background-repeat: no-repeat;
@@ -36,7 +41,7 @@ body, html{
 
 #pricingSection{
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)),
-  url('https://storage.googleapis.com/sharpspring-editor/stock/bg/bg-2.jpg');
+  url('https://firebasestorage.googleapis.com/v0/b/rcd-static.appspot.com/o/images%2Fimg-1557239992180-bg-2.jpg?alt=media&token=eb6a0ea4-3a3c-43e4-81a5-f559519e02a5');
 
   background-position: center center;
   background-repeat: no-repeat;
@@ -57,16 +62,17 @@ body, html{
   padding-bottom: 15px;
 }
 
+/* Blog Section */
 #blogHero{
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)),
-  url('https://s3.amazonaws.com/ss-usa/companies/MzawMDE3MTE2AQA/uploads/Rocketship.jpg');
+  url('https://firebasestorage.googleapis.com/v0/b/rcd-static.appspot.com/o/images%2Fimg-1557240169586-Rocketship.jpg?alt=media&token=3fa1f7e3-d9cf-4065-95bf-a010463ccb1e');
 
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 
-  height: 400px;
+  height: 350px;
 
   display: flex;
   justify-content: center;
@@ -75,5 +81,14 @@ body, html{
 
 .blogCard{
     padding-top: 15px;
-    padding-bottom: 15px; 
+    padding-bottom: 15px;
+}
+
+/* Contact Section */
+.contactRow{
+  padding-top: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

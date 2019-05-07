@@ -17,9 +17,7 @@ class Blog extends Component{
               </Col>
             </Row>
         </div>
-        <Container>
           <BlogBody />
-        </Container>
       </React.Fragment>
     )
   }

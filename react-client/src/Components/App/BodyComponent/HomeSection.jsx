@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
-import { browserHistory } from 'react-router';
-
 
 import HeroSection from './HomeComponent/HeroSection';
 import AboutSection from './HomeComponent/AboutSection';
