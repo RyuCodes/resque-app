@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Route} from 'react-router-dom';
 
 import EBookHeroSection from './EBookComponent/EBookHeroSection';
 import EBookDisplay from './EBookComponent/EBookDisplay';

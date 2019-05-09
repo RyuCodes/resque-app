@@ -24,11 +24,6 @@ module.exports = {
       progress: true,
       historyApiFallback: true,
   },
-  optimization: {
-    splitChunks: {
-      chunks: 'all',
-    }, 
-  },
   module : {
     rules : [
       {
