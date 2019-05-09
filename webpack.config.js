@@ -2,9 +2,11 @@ const path = require('path');
 const SRC_DIR = path.join(__dirname, '/react-client/src');
 const DIST_DIR = path.join(__dirname, '/react-client/dist');
 
+const isDev = process.env.NODE_ENV === 'development'
+
 module.exports = {
   entry: `${SRC_DIR}/index.jsx`,
-  mode: 'development',
+  mode: isDev ? 'development' : 'production',
   output: {
     path: DIST_DIR,
     filename: 'bundle.js',
@@ -13,6 +15,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.json', '.css']
   },
+  devtool: 'source-map',
   devServer: {
       contentBase: DIST_DIR,
       compress: true,
@@ -20,6 +23,11 @@ module.exports = {
       watchContentBase: true,
       progress: true,
       historyApiFallback: true,
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    }, 
   },
   module : {
     rules : [

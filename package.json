@@ -5,7 +5,8 @@
   "main": "webpack.config.js",
   "scripts": {
     "dev": "webpack-dev-server --config ./webpack.config.js",
-    "start": "webpack"
+    "start": "webpack",
+    "analyze": "source-map-explorer 'react-client/dist/*.js'"
   },
   "author": "\"Robert Yu <robert@resqueapp.com>",
   "license": "MIT",
@@ -13,12 +14,15 @@
     "axios": "^0.18.0",
     "body-parser": "^1.19.0",
     "express": "^4.16.4",
+    "formik": "^1.5.4",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.8",
     "react-dom": "^16.8.6",
     "react-router": "^5.0.0",
     "react-router-bootstrap": "^0.25.0",
-    "react-router-dom": "^5.0.0"
+    "react-router-dom": "^5.0.0",
+    "source-map-explorer": "^1.8.0",
+    "yup": "^0.27.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",

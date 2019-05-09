@@ -4,8 +4,9 @@ body, html{
 }
 
 .navbarPadding{
-  margin-top: 60px;
+  margin-top: 65px;
 }
+
 
 /* Home Page */
 #aboutUs{
@@ -91,4 +92,62 @@ body, html{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Team Section */
+#ourPhilosophy{
+  background-color: rgb(0, 69, 125);
+  height: 200px;
+  padding: 30px;
+}
+
+#teamContainer{
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.teamPhotos{
+  padding-top: 20px;
+  height: 250px;
+  width: 250px;
+}
+
+/* eBooks Section */
+#eBooksHero {
+
+  /* Position and center the image to scale on all screens */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)),
+  url('https://firebasestorage.googleapis.com/v0/b/rcd-static.appspot.com/o/images%2Fimg-1557322596527-ebook_bg.jpg?alt=media&token=3de2252b-0825-4f52-8551-206cf72c7aba');
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  vertical-align: top;
+
+  height: 450px;
+
+}
+
+.eBooksDisplay{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.eBookPicture{
+  padding-top: 20px;
+  height: 683px;
+  width: 500px;
+}
+
+.eBookPictureSm{
+  padding-top: 20px;
+  height: 410px;
+  width: 300px;
+}
+
+.eBooksSignup{
+  margin-top: 30px;
+  padding-top: 30px;
 }

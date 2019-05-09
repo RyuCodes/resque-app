@@ -5,10 +5,10 @@ import HomeSection from './Components/App/BodyComponent/HomeSection'
 import Blog from './Components/App/BodyComponent/Blog'
 import ContactSection from './Components/App/BodyComponent/ContactSection'
 import TeamSection from './Components/App/BodyComponent/TeamSection'
+import EBooksSection from './Components/App/BodyComponent/EBooksSection'
+import EBookSignup from './Components/App/BodyComponent/EBookComponent/EBookSignup'
+import EBookThanks from './Components/App/BodyComponent/EBookComponent/EBookThanks'
 
-
-
-import testMessage from './TestSection'
 
 class Routes extends Component {
   render() {
@@ -18,11 +18,11 @@ class Routes extends Component {
         <Route path="/blog" component={Blog} />
         <Route path="/contact" component={ContactSection} />
         <Route path="/team" component={TeamSection} />
+        <Route exact path="/ebooks" component={EBooksSection} />
+        <Route path="/ebooks/ebooksignup" component={EBookSignup} />
+        <Route path="/ebooks/thanks" component={EBookThanks} />
 
-
-
-
-        {/*404 Page*/}
+        {/*Default Page*/}
         <Route component={HomeSection} />
       </Switch>
     );

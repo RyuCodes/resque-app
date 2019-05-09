@@ -7,8 +7,6 @@ import PricingSection from './HomeComponent/PricingSection';
 
 class HomeSection extends Component {
 
-
-
   render(){
       return(
         <React.Fragment>
