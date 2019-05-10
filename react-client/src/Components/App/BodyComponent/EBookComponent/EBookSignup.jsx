@@ -10,6 +10,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 
+// Yup helps with validation schema
 let yup = require('yup');
 
 const schema = yup.object({
@@ -27,6 +28,8 @@ class EBookSignup extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+
+  // handleSubmit event in format from Formik output
   handleSubmit(event){
     let uri = ssBaseUri + ssEndpoint + '/jsonp/?';
     let dataArray = [];
@@ -37,6 +40,8 @@ class EBookSignup extends Component {
 
     let ssRequest = uri + dataArray.join('&');
 
+    // Sharpspring does not have CORS headers.  Sending as fetch because the
+    // request will still reach their endpoint
     fetch(ssRequest, {
       mode: 'no-cors',
     })
@@ -51,9 +56,11 @@ class EBookSignup extends Component {
     return(
 
       <div className="navbarPadding">
-        <Container>
-          <Row ClassName="eBooksSignup">
-            <Col ClassName="align-self-center">
+        <Container >
+          <Row ClassName="formSignup">
+            <Col sm={12} lg={12} ClassName="align-self-center mx-auto">
+
+        <h1>Get Your E-Book</h1>
         <Formik
           validationSchema={schema}
           onSubmit={this.handleSubmit}
@@ -91,6 +98,7 @@ class EBookSignup extends Component {
                   </Form.Control.Feedback>
                 </Form.Group>
               </Form.Row>
+
               <Form.Row>
                 <Form.Group as={Col} md="4" controlId="validationFormik02">
                   <Form.Label>Last name</Form.Label>
@@ -107,6 +115,7 @@ class EBookSignup extends Component {
                   </Form.Control.Feedback>
                 </Form.Group>
               </Form.Row>
+
               <Form.Row>
                 <Form.Group as={Col} md="4" controlId="validationFormik03">
                   <Form.Label>Email Address</Form.Label>

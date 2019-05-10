@@ -147,7 +147,9 @@ body, html{
   width: 300px;
 }
 
-.eBooksSignup{
-  margin-top: 30px;
+/* Form CSS */
+
+.formSignup{
+  margin-top: 50px;
   padding-top: 30px;
 }
