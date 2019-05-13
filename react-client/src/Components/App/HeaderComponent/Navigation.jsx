@@ -27,25 +27,29 @@ class Navigation extends Component {
           </LinkContainer>
         </Navbar.Brand>
 
-        <Nav className="ml-auto">
-          <LinkContainer to="/">
-            <Nav.Link>Home</Nav.Link>
-          </LinkContainer>
-          <LinkContainer to="/blog">
-            <Nav.Link>Blog</Nav.Link>
-          </LinkContainer>
-          <LinkContainer to="/contact">
-            <Nav.Link>Contact</Nav.Link>
-          </LinkContainer>
-          <NavDropdown alignRight title="More" id="basic-nav-dropdown">
-            <LinkContainer to="/team">
-              <NavDropdown.Item>Team</NavDropdown.Item>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ml-auto">
+            <LinkContainer to="/">
+              <Nav.Link>Home</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/ebooks">
-              <NavDropdown.Item>E-Books</NavDropdown.Item>
+            <LinkContainer to="/blog">
+              <Nav.Link>Blog</Nav.Link>
             </LinkContainer>
-          </NavDropdown>
-        </Nav>
+            <LinkContainer to="/contact">
+              <Nav.Link>Contact</Nav.Link>
+            </LinkContainer>
+            <NavDropdown alignRight title="More" id="basic-nav-dropdown">
+              <LinkContainer to="/team">
+                <NavDropdown.Item>Team</NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to="/ebooks">
+                <NavDropdown.Item>E-Books</NavDropdown.Item>
+              </LinkContainer>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
 
       </Navbar>
       </Container>

@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col'
 class PhiloSection extends Component {
   render(){
       return(
-          <div id="ourPhilosophy" className="text-light">
+          <div className="text-light ourPhilosophy">
             <Container>
               <Row>
                 <Col sm={12} lg={4} className = "align-self-center text-center">

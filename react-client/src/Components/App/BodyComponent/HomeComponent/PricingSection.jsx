@@ -9,7 +9,7 @@ const resqueRegister = "https://beta.resqueapp.com/register"
 class PricingSection extends Component {
   render(){
       return(
-        <div id="pricingSection">
+        <div className="pricingSection">
           <Container>
             <Row>
               <Col lg={8} className="text-light">

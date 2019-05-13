@@ -17,6 +17,7 @@
     "firebase": "^6.0.1",
     "firebase-tools": "^6.9.1",
     "formik": "^1.5.4",
+    "history": "^4.9.0",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.8",
     "react-dom": "^16.8.6",

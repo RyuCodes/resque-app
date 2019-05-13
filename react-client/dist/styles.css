@@ -40,7 +40,7 @@ body, html{
   color: rgb(167, 164, 164);
 }
 
-#pricingSection{
+.pricingSection{
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)),
   url('https://firebasestorage.googleapis.com/v0/b/rcd-static.appspot.com/o/images%2Fimg-1557239992180-bg-2.jpg?alt=media&token=eb6a0ea4-3a3c-43e4-81a5-f559519e02a5');
 
@@ -95,7 +95,7 @@ body, html{
 }
 
 /* Team Section */
-#ourPhilosophy{
+.ourPhilosophy{
   background-color: rgb(0, 69, 125);
   height: 200px;
   padding: 30px;
@@ -152,4 +152,22 @@ body, html{
 .formSignup{
   margin-top: 50px;
   padding-top: 30px;
+}
+
+/* Responsive for devices with width smaller than Pixel 2xl */
+@media only screen and (max-width: 415px){
+  .pricingSection{
+    height: 550px; 
+  }
+
+  .ourPhilosophy{
+    height: 450px;
+    padding: 30px;
+  }
+
+  .eBookPicture{
+    width: 300px;
+    height: 410px;
+  }
+
 }

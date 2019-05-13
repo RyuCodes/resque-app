@@ -13,6 +13,11 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(`${__dirname}/../react-client/dist/index.html`));
 });
 
+// index.html served before resolution of path
+app.get('/*', function (req, res) {
+   res.sendFile(path.join(__dirname, '/../react-client/dist/', 'index.html'));
+ });
+
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}!`);
 });

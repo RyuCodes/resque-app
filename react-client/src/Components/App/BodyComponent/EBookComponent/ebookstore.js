@@ -2,7 +2,7 @@ const eBookArray = {
   mediaGuide: {
     imgUrl : 'https://firebasestorage.googleapis.com/v0/b/rcd-static.appspot.com/o/images%2Fimg-1557322611888-SocialMediaMarketingCover.png?alt=media&token=b4068baf-24cc-4768-88c6-47642dc872c1',
     imgAlt : 'A Definitive Guide to Social Media Marketing',
-    title : 'Resque\'s Definitive Guide to Social Media',
+    title : 'Resque\'s Definitive Guide to Social Media Marketing',
     content: [{
         header: "Scheduling",
         p: "Not only do you need killer content to have a successful \

@@ -8,6 +8,10 @@ import Form from 'react-bootstrap/Form'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 
+
+// Navigation: BodyComponent > App > Components > src
+import history from '../../../../history'
+
 // Requires the following props: ssBaseUri, ssEndpoint, redirectTo, title
 
 // Yup helps with validation schema
@@ -45,18 +49,13 @@ class BasicSSForm extends Component {
       mode: 'no-cors',
     })
       .then(() => {
-        //this.props.history.push(this.props.redirectTo);
-        this.setState({redirect:true})
+        history.push(this.props.redirectTo);
       })
       .catch((error) => {console.log(error)})
   }
 
   render(){
-    if (this.state.redirect){
-      return(
-        <Redirect to={this.props.redirectTo} />
-      )
-    }
+
 
     return(
         <Col ClassName="align-self-center formSignup">
