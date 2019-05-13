@@ -22,7 +22,7 @@ class BlogBody extends Component {
 
   fetchPosts(){
     return axios.get(
-        'http://www.resqueapp.com/wp-json/wp/v2/posts',
+        'https://blog.resqueapp.com/wp-json/wp/v2/posts',
         {cancelToken: this.cancelSignal.token}
       );
   }

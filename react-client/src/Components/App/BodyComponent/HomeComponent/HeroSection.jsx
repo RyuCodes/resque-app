@@ -14,7 +14,7 @@ class HeroSection extends Component {
             <Row className="h-100">
               <Col xs={12} md={4} className="align-self-center">
               <h1 className="text-light text-center">Free Your Time</h1>
-                <p className="text-secondary text-center text-uppercase">
+                <p className="text-light text-center text-uppercase">
                   Optimize your social media scheduling and never worry about
                   stepping away
                 </p>
